@@ -50,6 +50,12 @@ textarea {
   resize: none;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
 // chrome autofill background removal
 // если на проекте у инпутов используются разные цвета фонов\текста -
 // удалите это из глобала и используйте локально с нужными цветами
@@ -82,6 +88,7 @@ select {
 
 // ie11 X removal
 input {
+
   &::-ms-clear,
   &::-ms-reveal {
     display: none;

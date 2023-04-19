@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  gap: 33px;
+
+  @include vp-1023 {
+    gap: 23px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.nav__link {
+  color: #f9fbfd;
+}
+
+.is-open .nav__list {
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+}
