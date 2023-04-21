@@ -1305,7 +1305,9 @@ button,
 }
 
 .main-header {
-  background: #000000;
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  width: 100%;
 }
 
 .main-header__container {
@@ -1488,6 +1490,46 @@ button,
   max-height: 20px;
 }
 
+.intro {
+  background: url("../../img/intro-background-desktop.jpg");
+  min-height: 650px;
+  padding: 272px 198px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 10px;
+  background-size: cover;
+}
+
+.intro h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #F9FBFD;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.intro p {
+  font-family: "Montserrat";
+  font-size: 20px;
+  line-height: 24px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #F9FBFD;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1536,13 +1578,14 @@ button,
   }
 
   .main-header__container {
-    padding-top: 30px;
+    padding-top: 28px;
     padding-bottom: 30px;
   }
 
   .main-header__logo {
     width: 38px;
     height: 20px;
+    margin-top: 2px;
   }
 
   .nav__list {
@@ -1593,6 +1636,24 @@ button,
   .social__svg {
     max-height: 16px;
   }
+
+  .intro {
+    background: url("../../img/intro-background-tablet.jpg");
+    padding: 268px 45px 0;
+    gap: 12px;
+    min-height: 638px;
+    background-size: cover;
+  }
+
+  .intro h1 {
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .intro p {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1639,7 +1700,6 @@ button,
 
   .nav {
     padding-left: 10px;
-    min-height: 568px;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -1697,6 +1757,24 @@ button,
 
   .social__list {
     margin-left: -9px;
+  }
+
+  .intro {
+    background: url("../../img/intro-background-mobile.jpg");
+    padding: 176px 15px 0;
+    gap: 11px;
+    min-height: 500px;
+    background-size: cover;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .intro p {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 

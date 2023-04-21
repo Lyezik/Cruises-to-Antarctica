@@ -4,7 +4,6 @@
 
   @include vp-767 {
     padding-left: 10px;
-    min-height: 568px;
     align-items: flex-start;
   }
 }
@@ -50,3 +49,11 @@
     flex-direction: column;
   }
 }
+
+// .is-open .container{
+//   height: 100%;
+// }
+
+// .is-open nav {
+//   height: 100%;
+// }
