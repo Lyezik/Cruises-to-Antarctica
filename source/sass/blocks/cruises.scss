@@ -1,0 +1,131 @@
+.cruises__container {
+  padding: 85px 118px 120px;
+}
+
+.cruises h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #011C40;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.cruises ul {
+  display: grid;
+  grid-template-columns: repeat(4, 23.01%);
+  gap: 30px;
+}
+
+.cruises li {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-height: 386px;
+}
+
+.cruises h3 {
+  padding-left: 30px;
+  padding-bottom: 23px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  align-items: center;
+  color: #F9FBFD;
+}
+
+.cruises__item div {
+  display: none;
+}
+
+.cruises b {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+  color: #F9FBFD;
+}
+
+.cruises p {
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+  color: #D8D8D9;
+  margin: 0 0 8px;
+}
+
+.cruises__item button {
+  margin-top: 15px;
+  min-height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  color: #011C40;
+  border: none;
+}
+
+.cruises__item--astoria {
+  background: url("../img/cruise-astoria.jpg");
+  background-size: cover;
+}
+
+.cruises__item--aline {
+  background: url("../img/cruise-odissey.jpg");
+  background-size: cover;
+}
+
+.cruises__item--atlantis {
+  background: url("../img/cruise-atlantis.jpg");
+  background-size: cover;
+}
+
+.cruises__item--odissey {
+  background: url("../img/cruise-odissey.jpg");
+  background-size: cover;
+}
+
+.cruises__item--olimpia {
+  background: url("../img/cruise-olimpia.jpg");
+  background-size: cover;
+}
+
+.cruises__item--avrora {
+  background: url("../img/cruise-avrora.jpg");
+  background-size: cover;
+}
+
+.cruises__item--leonor {
+  background: url("../img/cruise-leonor.jpg");
+  background-size: cover;
+}
+
+.cruises__item--minion {
+  background: url("../img/cruise-minion.jpg");
+  background-size: cover;
+}
+
+.cruises li:hover,
+.cruises li:focus {
+  padding: 28px 25px;
+  background: #011C40;
+  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  justify-content: start;
+}
+
+.cruises li:hover h3,
+.cruises li:focus h3 {
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.cruises li:hover div,
+.cruises li:focus div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}

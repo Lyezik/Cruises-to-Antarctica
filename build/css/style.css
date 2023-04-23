@@ -1641,6 +1641,169 @@ button,
   margin: 0;
 }
 
+.cruises__container {
+  padding: 85px 118px 120px;
+}
+
+.cruises h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #011C40;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.cruises ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (23.01%)[4];
+  grid-template-columns: repeat(4, 23.01%);
+  gap: 30px;
+}
+
+.cruises li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  min-height: 386px;
+}
+
+.cruises h3 {
+  padding-left: 30px;
+  padding-bottom: 23px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #F9FBFD;
+}
+
+.cruises__item div {
+  display: none;
+}
+
+.cruises b {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #F9FBFD;
+}
+
+.cruises p {
+  font-size: 14px;
+  line-height: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #D8D8D9;
+  margin: 0 0 8px;
+}
+
+.cruises__item button {
+  margin-top: 15px;
+  min-height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #011C40;
+  border: none;
+}
+
+.cruises__item--astoria {
+  background: url("../img/cruise-astoria.jpg");
+  background-size: cover;
+}
+
+.cruises__item--aline {
+  background: url("../img/cruise-odissey.jpg");
+  background-size: cover;
+}
+
+.cruises__item--atlantis {
+  background: url("../img/cruise-atlantis.jpg");
+  background-size: cover;
+}
+
+.cruises__item--odissey {
+  background: url("../img/cruise-odissey.jpg");
+  background-size: cover;
+}
+
+.cruises__item--olimpia {
+  background: url("../img/cruise-olimpia.jpg");
+  background-size: cover;
+}
+
+.cruises__item--avrora {
+  background: url("../img/cruise-avrora.jpg");
+  background-size: cover;
+}
+
+.cruises__item--leonor {
+  background: url("../img/cruise-leonor.jpg");
+  background-size: cover;
+}
+
+.cruises__item--minion {
+  background: url("../img/cruise-minion.jpg");
+  background-size: cover;
+}
+
+.cruises li:hover,
+.cruises li:focus {
+  padding: 28px 25px;
+  background: #011C40;
+  -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+}
+
+.cruises li:hover h3,
+.cruises li:focus h3 {
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.cruises li:hover div,
+.cruises li:focus div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 2px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
