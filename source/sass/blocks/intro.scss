@@ -1,32 +1,42 @@
 .intro {
   background: url("../../img/intro-background-desktop.jpg");
-  min-height: 650px;
-  padding: 272px 198px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
   background-size: cover;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
   @include vp-1023 {
     background: url("../../img/intro-background-tablet.jpg");
-    padding: 268px 45px 0;
-    gap: 12px;
-    min-height: 638px;
     background-size: cover;
+    filter:none;
   }
 
   @include vp-767 {
     background: url("../../img/intro-background-mobile.jpg");
+    background-size: cover;
+  }
+}
+
+.intro__container {
+  min-height: 650px;
+  padding: 272px 158px 0 198px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include vp-1023 {
+    padding: 268px 45px 0;
+    gap: 12px;
+    min-height: 638px;
+  }
+
+  @include vp-767 {
     padding: 176px 15px 0;
     gap: 11px;
     min-height: 500px;
-    background-size: cover;
   }
 }
 
 
 .intro h1 {
-  font-family: 'Montserrat';
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
@@ -47,7 +57,6 @@
 }
 
 .intro p {
-  font-family: 'Montserrat';
   font-size: 20px;
   line-height: 24px;
   align-items: center;

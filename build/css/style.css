@@ -435,7 +435,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "Placeholder", "Arial", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1400,7 +1400,6 @@ button,
 }
 
 .nav__link {
-  font-family: "Montserrat";
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -1492,8 +1491,14 @@ button,
 
 .intro {
   background: url("../../img/intro-background-desktop.jpg");
+  background-size: cover;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.intro__container {
   min-height: 650px;
-  padding: 272px 198px 0;
+  padding: 272px 158px 0 198px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1502,11 +1507,9 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 10px;
-  background-size: cover;
 }
 
 .intro h1 {
-  font-family: "Montserrat";
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
@@ -1519,7 +1522,6 @@ button,
 }
 
 .intro p {
-  font-family: "Montserrat";
   font-size: 20px;
   line-height: 24px;
   -webkit-box-align: center;
@@ -1527,6 +1529,115 @@ button,
   align-items: center;
   color: #F9FBFD;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.travel__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 145px;
+  gap: 88px;
+}
+
+.travel__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 512px;
+  padding-top: 55px;
+  gap: 25px;
+}
+
+.travel__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #011c40;
+  margin: 0;
+}
+
+.travel__description {
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #011c40;
+  margin: 0;
+}
+
+.travel__image {
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 48.27%;
+}
+
+.advantages {
+  background: url("../img/advantages-background.jpg");
+  background-size: cover;
+}
+
+.advantages__container {
+  padding-top: 110px;
+  padding-bottom: 120px;
+}
+
+.advantages h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #011C40;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.advantages ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (31%)[3];
+  grid-template-columns: repeat(3, 31%);
+  gap: 40px;
+}
+
+.advantages li {
+  background: #F9FBFD;
+  padding: 30px 30px 45px;
+}
+
+.advantages li:nth-child(2n) {
+  padding: 30px 45px 45px 30px;
+}
+
+.advantages svg {
+  margin-bottom: 10px;
+}
+
+.advantages h3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 0 9px;
+}
+
+.advantages p {
+  font-size: 14px;
+  line-height: 20px;
   margin: 0;
 }
 
@@ -1639,10 +1750,15 @@ button,
 
   .intro {
     background: url("../../img/intro-background-tablet.jpg");
+    background-size: cover;
+    -webkit-filter: none;
+    filter: none;
+  }
+
+  .intro__container {
     padding: 268px 45px 0;
     gap: 12px;
     min-height: 638px;
-    background-size: cover;
   }
 
   .intro h1 {
@@ -1653,6 +1769,73 @@ button,
   .intro p {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .travel__container {
+    padding-top: 90px;
+    padding-bottom: 92px;
+    gap: 30px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+
+  .travel__wrapper {
+    max-width: 324px;
+    padding-top: 0;
+    gap: 18px;
+  }
+
+  .travel__title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .travel__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .travel__image {
+    width: 47.67%;
+    padding-top: 10px;
+  }
+
+  .advantages__container {
+    padding-top: 90px;
+    padding-bottom: 100px;
+  }
+
+  .advantages h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .advantages ul {
+    -ms-grid-columns: (30.38%)[3];
+    grid-template-columns: repeat(3, 30.38%);
+    gap: 30px;
+  }
+
+  .advantages li {
+    padding: 26px 16px 20px 20px;
+  }
+
+  .advantages li:nth-child(2n) {
+    padding: 26px 16px 20px 20px;
+  }
+
+  .advantages svg {
+    max-height: 26px;
+    margin-left: -5px;
+  }
+
+  .advantages h3 {
+    line-height: 25px;
+  }
+
+  .advantages li:nth-child(3n) h3 {
+    margin-bottom: 20px;
   }
 }
 
@@ -1761,10 +1944,13 @@ button,
 
   .intro {
     background: url("../../img/intro-background-mobile.jpg");
+    background-size: cover;
+  }
+
+  .intro__container {
     padding: 176px 15px 0;
     gap: 11px;
     min-height: 500px;
-    background-size: cover;
   }
 
   .intro h1 {
@@ -1775,6 +1961,60 @@ button,
   .intro p {
     font-size: 16px;
     line-height: 22px;
+  }
+
+  .travel__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 57px;
+    padding-bottom: 85px;
+    gap: 33px;
+  }
+
+  .travel__wrapper {
+    max-width: 767px;
+    gap: 15px;
+  }
+
+  .travel__title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .travel__image {
+    width: 100%;
+  }
+
+  .advantages__container {
+    padding-top: 57px;
+    padding-bottom: 66px;
+  }
+
+  .advantages h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .advantages ul {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+    gap: 31px;
+  }
+
+  .advantages svg {
+    margin-left: -4px;
+    margin-bottom: 11px;
+  }
+
+  .advantages h3 {
+    padding-right: 40px;
+  }
+
+  .advantages li:nth-child(3n) h3 {
+    margin-bottom: 9px;
   }
 }
 
