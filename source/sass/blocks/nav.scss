@@ -1,6 +1,11 @@
 .nav {
   display: flex;
   align-items: center;
+
+  @include vp-767 {
+    padding-left: 10px;
+    align-items: flex-start;
+  }
 }
 
 .nav__list {
@@ -9,15 +14,31 @@
 
   @include vp-1023 {
     gap: 23px;
+    padding: 0 2px 0 0;
   }
 
   @include vp-767 {
     display: none;
+    gap: 26px;
   }
 }
 
 .nav__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
   color: #f9fbfd;
+
+  @include vp-1023 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #011c40;
+  }
 }
 
 .is-open .nav__list {
@@ -27,3 +48,11 @@
     flex-direction: column;
   }
 }
+
+// .is-open .container{
+//   height: 100%;
+// }
+
+// .is-open nav {
+//   height: 100%;
+// }
