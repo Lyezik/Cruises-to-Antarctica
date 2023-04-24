@@ -1,5 +1,13 @@
 .cruises__container {
   padding: 85px 118px 120px;
+
+  @include vp-1023 {
+    padding: 90px 60px 100px;
+  }
+
+  @include vp-767 {
+    padding: 55px 25px 65px;
+  }
 }
 
 .cruises h2 {
@@ -12,12 +20,31 @@
   color: #011C40;
   margin-bottom: 50px;
   margin-top: 0;
+
+  @include vp-1023 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @include vp-767 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
 }
 
 .cruises ul {
   display: grid;
   grid-template-columns: repeat(4, 23.01%);
   gap: 30px;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, 47.68%);
+  }
+
+  @include vp-767 {
+    grid-template-columns: 100%;
+  }
 }
 
 .cruises li {
@@ -36,6 +63,16 @@
   line-height: 27px;
   align-items: center;
   color: #F9FBFD;
+
+  @include vp-1023 {
+    padding-left: 35px;
+    padding-bottom: 27px;
+  }
+
+  @include vp-767 {
+    padding-left: 25px;
+    padding-bottom: 15px;
+  }
 }
 
 .cruises__item div {
@@ -72,41 +109,105 @@
 .cruises__item--astoria {
   background: url("../img/cruise-astoria.jpg");
   background-size: cover;
+
+  @include vp-1023 {
+    background: url("../img/cruise-astoria-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background: url("../img/cruise-astoria-mobile.jpg");
+  }
 }
 
 .cruises__item--aline {
   background: url("../img/cruise-odissey.jpg");
   background-size: cover;
+
+  @include vp-1023 {
+    background: url("../img/cruise-odissey-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background: url("../img/cruise-odissey-mobile.jpg");
+  }
 }
 
 .cruises__item--atlantis {
   background: url("../img/cruise-atlantis.jpg");
   background-size: cover;
+
+  @include vp-1023 {
+    background: url("../img/cruise-atlantis-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background: url("../img/cruise-atlantis-mobile.jpg");
+  }
 }
 
 .cruises__item--odissey {
   background: url("../img/cruise-odissey.jpg");
   background-size: cover;
+
+  @include vp-1023 {
+    background: url("../img/cruise-odissey-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background: url("../img/cruise-odissey-mobile.jpg");
+  }
 }
 
 .cruises__item--olimpia {
   background: url("../img/cruise-olimpia.jpg");
   background-size: cover;
+
+  @include vp-1023 {
+    background: url("../img/cruise-olimpia-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background: url("../img/cruise-olimpia-mobile.jpg");
+  }
 }
 
 .cruises__item--avrora {
   background: url("../img/cruise-avrora.jpg");
   background-size: cover;
+
+  @include vp-1023 {
+    background: url("../img/cruise-avrora-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background: url("../img/cruise-avrora-mobile.jpg");
+  }
 }
 
 .cruises__item--leonor {
   background: url("../img/cruise-leonor.jpg");
   background-size: cover;
+
+  @include vp-1023 {
+    background: url("../img/cruise-leonor-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background: url("../img/cruise-leonor-mobile.jpg");
+  }
 }
 
 .cruises__item--minion {
   background: url("../img/cruise-minion.jpg");
   background-size: cover;
+
+  @include vp-1023 {
+    background: url("../img/cruise-minion-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background: url("../img/cruise-minion-mobile.jpg");
+  }
 }
 
 .cruises li:hover,
@@ -115,6 +216,14 @@
   background: #011C40;
   box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
   justify-content: start;
+
+  @include vp-1023 {
+    padding: 29px 35px;
+  }
+
+  @include vp-767 {
+    padding: 30px 25px;
+  }
 }
 
 .cruises li:hover h3,

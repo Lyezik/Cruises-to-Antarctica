@@ -2000,6 +2000,62 @@ button,
   .advantages li:nth-child(3n) h3 {
     margin-bottom: 20px;
   }
+
+  .cruises__container {
+    padding: 90px 60px 100px;
+  }
+
+  .cruises h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .cruises ul {
+    -ms-grid-columns: (47.68%)[2];
+    grid-template-columns: repeat(2, 47.68%);
+  }
+
+  .cruises h3 {
+    padding-left: 35px;
+    padding-bottom: 27px;
+  }
+
+  .cruises__item--astoria {
+    background: url("../img/cruise-astoria-tablet.jpg");
+  }
+
+  .cruises__item--aline {
+    background: url("../img/cruise-odissey-tablet.jpg");
+  }
+
+  .cruises__item--atlantis {
+    background: url("../img/cruise-atlantis-tablet.jpg");
+  }
+
+  .cruises__item--odissey {
+    background: url("../img/cruise-odissey-tablet.jpg");
+  }
+
+  .cruises__item--olimpia {
+    background: url("../img/cruise-olimpia-tablet.jpg");
+  }
+
+  .cruises__item--avrora {
+    background: url("../img/cruise-avrora-tablet.jpg");
+  }
+
+  .cruises__item--leonor {
+    background: url("../img/cruise-leonor-tablet.jpg");
+  }
+
+  .cruises__item--minion {
+    background: url("../img/cruise-minion-tablet.jpg");
+  }
+
+  .cruises li:hover,
+  .cruises li:focus {
+    padding: 29px 35px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2178,6 +2234,63 @@ button,
 
   .advantages li:nth-child(3n) h3 {
     margin-bottom: 9px;
+  }
+
+  .cruises__container {
+    padding: 55px 25px 65px;
+  }
+
+  .cruises h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .cruises ul {
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
+  }
+
+  .cruises h3 {
+    padding-left: 25px;
+    padding-bottom: 15px;
+  }
+
+  .cruises__item--astoria {
+    background: url("../img/cruise-astoria-mobile.jpg");
+  }
+
+  .cruises__item--aline {
+    background: url("../img/cruise-odissey-mobile.jpg");
+  }
+
+  .cruises__item--atlantis {
+    background: url("../img/cruise-atlantis-mobile.jpg");
+  }
+
+  .cruises__item--odissey {
+    background: url("../img/cruise-odissey-mobile.jpg");
+  }
+
+  .cruises__item--olimpia {
+    background: url("../img/cruise-olimpia-mobile.jpg");
+  }
+
+  .cruises__item--avrora {
+    background: url("../img/cruise-avrora-mobile.jpg");
+  }
+
+  .cruises__item--leonor {
+    background: url("../img/cruise-leonor-mobile.jpg");
+  }
+
+  .cruises__item--minion {
+    background: url("../img/cruise-minion-mobile.jpg");
+  }
+
+  .cruises li:hover,
+  .cruises li:focus {
+    padding: 30px 25px;
   }
 }
 
