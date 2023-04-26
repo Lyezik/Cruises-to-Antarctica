@@ -3,13 +3,6 @@
   position: relative;
 
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
-
-  @media screen and (max-width: 767px) {
-    padding: 4px 0 48px;
-    width: 100%;
-  }
 
   label {
     display: flex;
@@ -73,6 +66,7 @@
   }
 
   &.is-invalid {
+
     input,
     textarea {
       border: 2px solid #ff1553;
@@ -97,8 +91,10 @@
 
   .input-message {
     position: absolute;
-    right: 0;
-    bottom: -5px;
+    left: 10px;
+    bottom: -16px;
+    font-size: 14px;
+    line-height: 16px;
 
     &.is-invalid {
       color: #ff0000;

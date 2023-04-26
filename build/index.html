@@ -231,25 +231,51 @@
             <p>Забронируйте тур<br class="reservation__br"> за 3-6&nbsp;месяцев
               до&nbsp;даты выезда и&nbsp;сэкономьте до 50%</p>
           </div>
-          <form class="reservation__form reservation-form">
-            <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
-            <label>
-              <input placeholder="Имя">
-            </label>
-            <label>
-              <input placeholder="Телефон">
-            </label>
-            <label>
-              <input placeholder="Email">
-            </label>
-            <div class="reservation-form__wrapper">
-              <input type="checkbox" id="agreement">
-              <label for="agreement">
-                <p>Я согласен на обработку моих&nbsp;персональных данных</p>
-              </label>
-            </div>
-            <button type="submit">Оставить заявку</button>
-          </form>
+          <div class="reservation__form-wrapper" data-form-validate data-callback="base">
+            <form class="reservation__form reservation-form" action="https://echo.htmlacademy.ru/" method="post"
+              autocomplete="off">
+              <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
+              <div data-on-input-validate data-validate-type="text" data-limitation="name"
+                data-message-base="Поле обязательно к заполнению" data-required>
+                <input type="text" placeholder="Имя" name="name" aria-label="Имя">
+              </div>
+              <div data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
+                data-required>
+                <input type="tel" placeholder="Телефон" name="phone" aria-label="Телефон">
+              </div>
+              <div data-on-input-validate data-validate-type="email" data-message-base="Поле обязательно к заполнению"
+                data-required>
+                <input type="email" placeholder="Email" name="email" aria-label="Email">
+              </div>
+              <div class="reservation-form__wrapper">
+                <div data-on-input-validate data-validate-type="checkbox"
+                  data-message-base="Поле обязательно к заполнению" data-required>
+                  <input type="checkbox" id="agreement" name="agreement" checked required>
+                  <label for="agreement">
+                    <p>Я согласен на обработку моих&nbsp;персональных данных</p>
+                  </label>
+                </div>
+              </div>
+              <button type="submit">Оставить заявку</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__contacts contacts">
+        <div class="contacts__container container">
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="contacts__map"></div>
+          <div class="contacts__wrapper">
+            <p class="contacts__description">У вас ещё остались вопросы или сомнения?
+              Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
+            <address class="contacts__address">г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</address>
+            <address class="contacts__phone">
+              <a class="contacts__phone-link" href="tel:88002000000">
+                8-800-200-00-00
+              </a>
+            </address>
+          </div>
         </div>
       </section>
     </main>
