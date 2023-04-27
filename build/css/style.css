@@ -1090,7 +1090,7 @@ button,
 }
 
 .intro {
-  background: url("../../img/intro-background-desktop.jpg");
+  background: url("../img/intro-background-desktop.jpg");
   background-size: cover;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -1747,7 +1747,7 @@ button,
   }
 
   .intro {
-    background: url("../../img/intro-background-tablet.jpg");
+    background: url("../img/intro-background-tablet.jpg");
     background-size: cover;
     -webkit-filter: none;
     filter: none;
