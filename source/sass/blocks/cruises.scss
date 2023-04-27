@@ -96,7 +96,7 @@
 }
 
 .cruises__item button {
-  margin-top: 15px;
+  margin-top: auto;
   min-height: 40px;
   font-weight: 600;
   font-size: 14px;
@@ -110,8 +110,23 @@
   background: url("../img/cruise-astoria.jpg");
   background-size: cover;
 
+  @media (min-resolution: $retina-dppx) and (min-width: (1024px)) {
+    background: url("../img/cruise-astoria@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (1024 - 1px)) {
+    background: url("../img/cruise-astoria-tablet@2x.jpg");
+    background-size: cover;
+  }
+
   @include vp-1023 {
     background: url("../img/cruise-astoria-tablet.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (767 - 1px)) {
+    background: url("../img/cruise-astoria-mobile@2x.jpg");
     background-size: cover;
   }
 
@@ -125,8 +140,23 @@
   background: url("../img/cruise-odissey.jpg");
   background-size: cover;
 
+  @media (min-resolution: $retina-dppx) and (min-width: (1024px)) {
+    background: url("../img/cruise-odissey@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (1024 - 1px)) {
+    background: url("../img/cruise-odissey-tablet@2x.jpg");
+    background-size: cover;
+  }
+
   @include vp-1023 {
     background: url("../img/cruise-odissey-tablet.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (767 - 1px)) {
+    background: url("../img/cruise-odissey-mobile@2x.jpg");
     background-size: cover;
   }
 
@@ -140,8 +170,23 @@
   background: url("../img/cruise-atlantis.jpg");
   background-size: cover;
 
+  @media (min-resolution: $retina-dppx) and (min-width: (1024px)) {
+    background: url("../img/cruise-atlantis@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (1024 - 1px)) {
+    background: url("../img/cruise-atlantis-tablet@2x.jpg");
+    background-size: cover;
+  }
+
   @include vp-1023 {
     background: url("../img/cruise-atlantis-tablet.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (767 - 1px)) {
+    background: url("../img/cruise-atlantis-mobile@2x.jpg");
     background-size: cover;
   }
 
@@ -155,8 +200,23 @@
   background: url("../img/cruise-odissey.jpg");
   background-size: cover;
 
+  @media (min-resolution: $retina-dppx) and (min-width: (1024px)) {
+    background: url("../img/cruise-odissey@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (1024 - 1px)) {
+    background: url("../img/cruise-odissey-tablet@2x.jpg");
+    background-size: cover;
+  }
+
   @include vp-1023 {
     background: url("../img/cruise-odissey-tablet.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (767 - 1px)) {
+    background: url("../img/cruise-odissey-mobile@2x.jpg");
     background-size: cover;
   }
 
@@ -170,8 +230,23 @@
   background: url("../img/cruise-olimpia.jpg");
   background-size: cover;
 
+  @media (min-resolution: $retina-dppx) and (min-width: (1024px)) {
+    background: url("../img/cruise-olimpia@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (1024 - 1px)) {
+    background: url("../img/cruise-olimpia-tablet@2x.jpg");
+    background-size: cover;
+  }
+
   @include vp-1023 {
     background: url("../img/cruise-olimpia-tablet.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (767 - 1px)) {
+    background: url("../img/cruise-olimpia-mobile@2x.jpg");
     background-size: cover;
   }
 
@@ -185,8 +260,23 @@
   background: url("../img/cruise-avrora.jpg");
   background-size: cover;
 
+  @media (min-resolution: $retina-dppx) and (min-width: (1024px)) {
+    background: url("../img/cruise-avrora@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (1024 - 1px)) {
+    background: url("../img/cruise-avrora-tablet@2x.jpg");
+    background-size: cover;
+  }
+
   @include vp-1023 {
     background: url("../img/cruise-avrora-tablet.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (767 - 1px)) {
+    background: url("../img/cruise-avrora-mobile@2x.jpg");
     background-size: cover;
   }
 
@@ -200,8 +290,23 @@
   background: url("../img/cruise-leonor.jpg");
   background-size: cover;
 
+  @media (min-resolution: $retina-dppx) and (min-width: (1024px)) {
+    background: url("../img/cruise-leonor@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (1024 - 1px)) {
+    background: url("../img/cruise-leonor-tablet@2x.jpg");
+    background-size: cover;
+  }
+
   @include vp-1023 {
     background: url("../img/cruise-leonor-tablet.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (767 - 1px)) {
+    background: url("../img/cruise-leonor-mobile@2x.jpg");
     background-size: cover;
   }
 
@@ -215,8 +320,23 @@
   background: url("../img/cruise-minion.jpg");
   background-size: cover;
 
+  @media (min-resolution: $retina-dppx) and (min-width: (1024px)) {
+    background: url("../img/cruise-minion@2x.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (1024 - 1px)) {
+    background: url("../img/cruise-minion-tablet@2x.jpg");
+    background-size: cover;
+  }
+
   @include vp-1023 {
     background: url("../img/cruise-minion-tablet.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (767 - 1px)) {
+    background: url("../img/cruise-minion-mobile@2x.jpg");
     background-size: cover;
   }
 
@@ -228,7 +348,7 @@
 
 .cruises li:hover,
 .cruises li:focus {
-  padding: 28px 25px;
+  padding: 28px 25px 35px;
   background: #011C40;
   box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
   justify-content: start;
@@ -253,4 +373,5 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
+  flex-grow: 1;
 }

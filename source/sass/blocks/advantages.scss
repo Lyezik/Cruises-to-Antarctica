@@ -1,6 +1,33 @@
 .advantages {
   background: url("../img/advantages-background.jpg");
   background-size: cover;
+
+  @media (min-resolution: $retina-dppx) and (min-width: (1024px)) {
+    background: url("../img/advantages-background@2x.jpg");
+    background-size: cover;
+  }
+
+
+
+  @media (min-resolution: $retina-dppx) and (max-width: (1024 - 1px)) {
+    background: url("../img/advantages-background-tablet@2x.jpg");
+    background-size: cover;
+  }
+
+  @include vp-1023 {
+    background: url("../img/advantages-background-tablet.jpg");
+    background-size: cover;
+  }
+
+  @media (min-resolution: $retina-dppx) and (max-width: (767 - 1px)) {
+    background: url("../img/advantages-background-mobile@2x.jpg");
+    background-size: cover;
+  }
+
+  @include vp-767 {
+    background: url("../img/advantages-background-mobile.jpg");
+    background-size: cover;
+  }
 }
 
 .advantages__container {
