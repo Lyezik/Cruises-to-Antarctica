@@ -10,17 +10,7 @@ import {initLocomotiveScroll} from './modules/header/init-locomotive-scroll';
 window.addEventListener('DOMContentLoaded', () => {
   initLocomotiveScroll();
 
-  window.addEventListener('load', () => {
-    const burger = new Burger();
-    burger.init();
-    const stickyHeader = new StickyHeader();
-    stickyHeader.init();
-  });
-});
-// ---------------------------------
-
-window.addEventListener('DOMContentLoaded', () => {
-
+  // ---------------------------------
   // Utils
   // ---------------------------------
 
@@ -36,6 +26,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    const burger = new Burger();
+    burger.init();
+    const stickyHeader = new StickyHeader();
+    stickyHeader.init();
   });
 });
 
