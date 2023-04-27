@@ -6,6 +6,7 @@ import './modules/header/locomotive-scroll';
 import {Burger} from './modules/header/burger';
 import {StickyHeader} from './modules/header/sticky-header';
 import {initLocomotiveScroll} from './modules/header/init-locomotive-scroll';
+import {init} from './modules/modals/map';
 
 window.addEventListener('DOMContentLoaded', () => {
   initLocomotiveScroll();
@@ -30,8 +31,11 @@ window.addEventListener('DOMContentLoaded', () => {
     burger.init();
     const stickyHeader = new StickyHeader();
     stickyHeader.init();
+    ymaps.ready(init);
   });
 });
+
+
 
 // ---------------------------------
 
