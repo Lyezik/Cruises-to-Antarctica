@@ -69,7 +69,6 @@
 }
 
 .is-open .main-header__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -78,7 +77,7 @@
     height: 2px;
     top: auto;
     right: -2px;
-    background-color: #011C40;
+    background-color: #011c40;
     box-shadow: none;
   }
 

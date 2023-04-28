@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #011C40;
+  color: #011c40;
   margin-bottom: 50px;
   margin-top: 0;
 
@@ -62,7 +62,7 @@
   font-size: 18px;
   line-height: 27px;
   align-items: center;
-  color: #F9FBFD;
+  color: #f9fbfd;
 
   @include vp-1023 {
     padding-left: 35px;
@@ -84,14 +84,14 @@
   font-size: 14px;
   line-height: 20px;
   align-items: center;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .cruises p {
   font-size: 14px;
   line-height: 20px;
   align-items: center;
-  color: #D8D8D9;
+  color: #d8d8d9;
   margin: 0 0 8px;
 }
 
@@ -104,10 +104,23 @@
   line-height: 21px;
   align-items: center;
   justify-content: center;
-  color: #011C40;
+  color: #011c40;
   border: none;
-  background: #F9FBFD;
+  background: #f9fbfd;
   user-select: none;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.7;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .cruises__item--astoria {
@@ -353,8 +366,8 @@
 .cruises li:hover,
 .cruises li:focus {
   padding: 28px 25px 35px;
-  background: #011C40;
-  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  background: #011c40;
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   justify-content: start;
 
   @include vp-1023 {

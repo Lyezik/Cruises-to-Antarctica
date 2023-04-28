@@ -8,8 +8,6 @@
     background-size: cover;
   }
 
-
-
   @media (min-resolution: $retina-dppx) and (max-width: (1024 - 1px)) {
     background: url("../img/advantages-background-tablet@2x.jpg");
     background-size: cover;
@@ -52,7 +50,7 @@
   line-height: 42px;
   display: flex;
   justify-content: center;
-  color: #011C40;
+  color: #011c40;
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -87,7 +85,7 @@
 .advantages li {
   display: flex;
   flex-direction: column;
-  background: #F9FBFD;
+  background: #f9fbfd;
   padding: 30px 30px 45px;
 
   @include vp-1023 {

@@ -960,7 +960,7 @@ button,
   height: 2px;
   top: auto;
   right: -2px;
-  background-color: #011C40;
+  background-color: #011c40;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -1015,6 +1015,19 @@ button,
   fill: #f9fbfd;
 }
 
+.logo__link:hover {
+  opacity: 0.7;
+}
+
+.logo__link:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
+.logo__link:active {
+  opacity: 0.5;
+}
+
 .logo__svg {
   height: 100%;
   width: 100%;
@@ -1046,8 +1059,21 @@ button,
   color: #f9fbfd;
 }
 
+.nav__link:hover {
+  opacity: 0.7;
+}
+
+.nav__link:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
+.nav__link:active {
+  opacity: 0.5;
+}
+
 .main-footer {
-  background: #011C40;
+  background: #011c40;
 }
 
 .main-footer__container {
@@ -1087,7 +1113,6 @@ button,
 }
 
 .footer-nav__link {
-  font-family: "Montserrat";
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -1095,6 +1120,19 @@ button,
   -ms-flex-align: center;
   align-items: center;
   color: #f9fbfd;
+}
+
+.footer-nav__link:hover {
+  opacity: 0.7;
+}
+
+.footer-nav__link:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
+.footer-nav__link:active {
+  opacity: 0.5;
 }
 
 .social {
@@ -1132,6 +1170,19 @@ button,
   cursor: pointer;
 }
 
+.social__link:hover {
+  opacity: 0.7;
+}
+
+.social__link:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
+.social__link:active {
+  opacity: 0.5;
+}
+
 .social__svg {
   max-height: 20px;
 }
@@ -1139,8 +1190,8 @@ button,
 .intro {
   background-image: url("../img/intro-background-desktop.jpg");
   background-size: cover;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   background-color: rgb(26, 69, 178);
 }
 
@@ -1164,8 +1215,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #F9FBFD;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #f9fbfd;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 0 2px;
 }
 
@@ -1175,8 +1226,8 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #F9FBFD;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #f9fbfd;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
 }
 
@@ -1264,7 +1315,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #011C40;
+  color: #011c40;
   margin-top: 0;
   margin-bottom: 50px;
 }
@@ -1285,7 +1336,7 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: #F9FBFD;
+  background: #f9fbfd;
   padding: 30px 30px 45px;
 }
 
@@ -1327,7 +1378,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #011C40;
+  color: #011c40;
   margin-bottom: 50px;
   margin-top: 0;
 }
@@ -1364,7 +1415,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .cruises__item div {
@@ -1378,7 +1429,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .cruises p {
@@ -1387,7 +1438,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #D8D8D9;
+  color: #d8d8d9;
   margin: 0 0 8px;
 }
 
@@ -1406,13 +1457,26 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #011C40;
+  color: #011c40;
   border: none;
-  background: #F9FBFD;
+  background: #f9fbfd;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.cruises__item a:hover {
+  opacity: 0.7;
+}
+
+.cruises__item a:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
+.cruises__item a:active {
+  opacity: 0.5;
 }
 
 .cruises__item--astoria {
@@ -1458,9 +1522,9 @@ button,
 .cruises li:hover,
 .cruises li:focus {
   padding: 28px 25px 35px;
-  background: #011C40;
-  -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  background: #011c40;
+  -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
@@ -1540,7 +1604,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: #011C40;
+  color: #011c40;
   margin: 0;
   padding-right: 120px;
 }
@@ -1552,9 +1616,9 @@ button,
 .reservation-form {
   max-width: 403px;
   padding: 44px 50px 50px;
-  background: #011C40;
-  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  background: #011c40;
+  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1639,7 +1703,7 @@ button,
 }
 
 .reservation-form button {
-  background: #F9FBFD;
+  background: #f9fbfd;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
@@ -1652,9 +1716,22 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #011C40;
+  color: #011c40;
   border: 0;
   height: 43px;
+}
+
+.reservation-form button:hover {
+  opacity: 0.7;
+}
+
+.reservation-form button:focus {
+  opacity: 0.7;
+  outline: none;
+}
+
+.reservation-form button:active {
+  opacity: 0.5;
 }
 
 .contacts__container {
@@ -1731,7 +1808,7 @@ button,
 }
 
 [class*=copyrights-pane] {
-  display: none !important;
+  display: none;
 }
 
 /* @mixin hover-focus {
@@ -2506,7 +2583,7 @@ button,
   .reservation-form__wrapper label::before {
     width: 20px;
     height: 20px;
-    top: 0px;
+    top: 0;
   }
 
   .reservation-form__wrapper span {
