@@ -71,13 +71,19 @@
   }
 }
 
-.travel__image {
+.travel__wrapper-picture {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   object-fit: contain;
   width: 48.27%;
+  flex-shrink: 0;
+  align-self: center;
 
   @include vp-1023 {
     width: 47.67%;
     padding-top: 10px;
+    align-self: flex-start;
   }
 
   @include vp-767 {
