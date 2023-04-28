@@ -58,8 +58,8 @@
   }
 }
 
-.reservation-form__wrapper [type=checkbox] {
-  display: none;
+.reservation-form__wrapper [type=checkbox]:focus~p {
+  opacity: 0.5;
 }
 
 .reservation-form__wrapper label::before {
@@ -74,18 +74,18 @@
   @include vp-767 {
     width: 20px;
     height: 20px;
-    top: 2px;
+    top: 0px;
   }
 }
 
-.reservation-form__wrapper input:checked+label::after {
+.reservation-form__wrapper input:checked~p::after {
   content: "";
   position: absolute;
   top: 5px;
   left: 3px;
   width: 18px;
   height: 18px;
-  background: url("../../img/sprite/check-mark.svg") no-repeat;
+  background: url("../img/sprite/check-mark.svg") no-repeat;
 }
 
 
@@ -93,11 +93,11 @@
   font-size: 10px;
   line-height: 13px;
   align-items: center;
-  color: #F9FBFD;
+  color: #f9fbfd;
   padding-top: 3px;
   padding-left: 23px;
   letter-spacing: -0.1px;
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 
   @include vp-1023 {
     padding-top: 4px;
@@ -108,6 +108,10 @@
     text-align: start;
     padding-top: 0;
     padding-left: 28px;
+  }
+
+  &:hover {
+    opacity: 0.5;
   }
 }
 

@@ -11,6 +11,8 @@
 .nav__list {
   display: flex;
   gap: 33px;
+  flex-wrap: wrap;
+  padding-bottom: 5px;
 
   @include vp-1023 {
     gap: 23px;

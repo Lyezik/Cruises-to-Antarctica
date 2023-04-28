@@ -1,6 +1,7 @@
 .advantages {
   background: url("../img/advantages-background.jpg");
   background-size: cover;
+  background-color: rgb(122, 145, 203);
 
   @media (min-resolution: $retina-dppx) and (min-width: (1024px)) {
     background: url("../img/advantages-background@2x.jpg");
@@ -32,7 +33,7 @@
 
 .advantages__container {
   padding-top: 110px;
-  padding-bottom: 120px;
+  padding-bottom: 118px;
 
   @include vp-1023 {
     padding-top: 90px;
@@ -84,6 +85,8 @@
 }
 
 .advantages li {
+  display: flex;
+  flex-direction: column;
   background: #F9FBFD;
   padding: 30px 30px 45px;
 
@@ -101,7 +104,7 @@
 }
 
 .advantages svg {
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 
   @include vp-1023 {
     max-height: 26px;
@@ -110,7 +113,7 @@
 
   @include vp-767 {
     margin-left: -4px;
-    margin-bottom: 11px;
+    margin-bottom: 18px;
   }
 }
 

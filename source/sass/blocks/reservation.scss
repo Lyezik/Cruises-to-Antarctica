@@ -1,6 +1,7 @@
 .reservation {
   background: url("../img/feedback-background.jpg");
   background-size: cover;
+  background-color: rgb(150, 171, 223);
 
   @media (min-resolution: $retina-dppx) and (min-width: (1024px)) {
     background: url("../img/feedback-background@2x.jpg");

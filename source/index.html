@@ -8,28 +8,35 @@
   <meta name="description" content="Описание проекта">
   <title>Cruises to Antarctica</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body>
   <div class="wrapper">
     <header class="main-header" data-header>
       <div class="main-header__container container">
-        <svg class="main-header__logo" width="70" height="38" viewBox="0 0 70 38" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/sprite.svg#logo"></use>
-        </svg>
+        <div class="main-header__logo logo">
+          <a class="logo__link" href="index.html">
+            <span class="visually-hidden"> Логотип сайта.</span>
+            <svg class="logo__svg" class="main-header__logo" width="70" height="38" viewBox="0 0 70 38"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
         <nav class="main-header__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link">Преимущества</a>
+              <a class="nav__link" href="#advantages">Преимущества</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link">Направления</a>
+              <a class="nav__link" href="#">Направления</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link">Ближайшие круизы</a>
+              <a class="nav__link" href="#cruises">Ближайшие круизы</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link">Контакты</a>
+              <a class="nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -53,19 +60,23 @@
             <p class="travel__description">Это волшебное путешествие поможет вам познакомиться поближе
               с&nbsp;удивительным
               миром Антарктики. Наш круизный
-              лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов
+              лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов
               пингвинов,
               китов,
-              морских котиков и многое другое.</p>
+              морских котиков и&nbsp;многое другое.</p>
           </div>
+          <div class="travel__wrapper-picture">
           <picture>
-            <source type="image/webp" srcset="../img/pinguins.webp 1x , ../img/pinguins@2x.webp 2x" width="560" height="301">
-              <img class="travel__image" src="../img/pinguins.jpg" srcset="../img/pinguins@2x.jpg 2x" width="560" height="301" alt="Пингвины.">
+            <source type="image/webp" srcset="../img/pinguins.webp 1x , ../img/pinguins@2x.webp 2x" width="560"
+              height="301">
+            <img class="travel__image" src="../img/pinguins.jpg" srcset="../img/pinguins@2x.jpg 2x" width="560"
+              height="301" alt="Пингвины.">
           </picture>
+        </div>
         </div>
       </section>
 
-      <section class="main__advantages advantages">
+      <section class="main__advantages advantages" id="advantages">
         <div class="advantages__container container">
           <h2>Преимущества</h2>
           <ul>
@@ -74,7 +85,7 @@
                 <use xlink:href="img/sprite.svg#lainer"></use>
               </svg>
               <h3>Небольшой круизный&nbsp;лайнер</h3>
-              <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и&nbsp;даст
+              <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума и очередей и&nbsp;даст
                 возможность насладиться видами и&nbsp;природой.</p>
             </li>
 
@@ -83,7 +94,7 @@
                 <use xlink:href="img/sprite.svg#check-double-mark"></use>
               </svg>
               <h3>Система все&nbsp;включено</h3>
-              <p>Все наши круизы работают по системе “Все&nbsp;Включено”. Великолепные&nbsp;блюда и&nbsp;безлимитный бар
+              <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар
                 доступны для&nbsp;вас
                 24&nbsp;часа.</p>
             </li>
@@ -100,11 +111,11 @@
         </div>
       </section>
 
-      <section class="main__cruises cruises">
+      <section class="main__cruises cruises" id="cruises">
         <div class="cruises__container container">
           <h2>Ближайшие круизы</h2>
           <ul>
-            <li class="cruises__item cruises__item--astoria">
+            <li class="cruises__item cruises__item--astoria" tabindex="0">
               <h3>Круиз “Астория”</h3>
               <div>
                 <b>Маршрут</b>
@@ -119,7 +130,7 @@
               </div>
             </li>
 
-            <li class="cruises__item cruises__item--aline">
+            <li class="cruises__item cruises__item--aline" tabindex="0">
               <h3>Круиз “Элайн”</h3>
               <div>
                 <b>Маршрут</b>
@@ -134,7 +145,7 @@
               </div>
             </li>
 
-            <li class="cruises__item cruises__item--atlantis">
+            <li class="cruises__item cruises__item--atlantis" tabindex="0">
               <h3>Круиз “Атлантис”</h3>
               <div>
                 <b>Маршрут</b>
@@ -149,7 +160,7 @@
               </div>
             </li>
 
-            <li class="cruises__item cruises__item--odissey">
+            <li class="cruises__item cruises__item--odissey" tabindex="0">
               <h3>Круиз “Одиссей”</h3>
               <div>
                 <b>Маршрут</b>
@@ -164,7 +175,7 @@
               </div>
             </li>
 
-            <li class="cruises__item cruises__item--olimpia">
+            <li class="cruises__item cruises__item--olimpia" tabindex="0">
               <h3>Круиз “Олимпия”</h3>
               <div>
                 <b>Маршрут</b>
@@ -179,7 +190,7 @@
               </div>
             </li>
 
-            <li class="cruises__item cruises__item--avrora">
+            <li class="cruises__item cruises__item--avrora" tabindex="0">
               <h3>Круиз “Аврора”</h3>
               <div>
                 <b>Маршрут</b>
@@ -194,7 +205,7 @@
               </div>
             </li>
 
-            <li class="cruises__item cruises__item--leonor">
+            <li class="cruises__item cruises__item--leonor" tabindex="0">
               <h3>Круиз “Леонор”</h3>
               <div>
                 <b>Маршрут</b>
@@ -209,7 +220,7 @@
               </div>
             </li>
 
-            <li class="cruises__item cruises__item--minion">
+            <li class="cruises__item cruises__item--minion" tabindex="0">
               <h3>Круиз “Минион - 1”</h3>
               <div>
                 <b>Маршрут</b>
@@ -231,31 +242,31 @@
         <div class="reservation__container container">
           <div class="reservation__wrapper">
             <h2>Раннее бронирование</h2>
-            <p>Забронируйте тур<br class="reservation__br"> за 3-6&nbsp;месяцев
-              до&nbsp;даты выезда и&nbsp;сэкономьте до 50%</p>
+            <p>Забронируйте тур<br class="reservation__br"> за&nbsp;3-6 месяцев
+              до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
           </div>
           <div class="reservation__form-wrapper" data-form-validate data-callback="base">
             <form class="reservation__form reservation-form" action="https://echo.htmlacademy.ru/" method="post"
               autocomplete="off">
-              <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</p>
-              <div data-on-input-validate data-validate-type="text" data-limitation="name"
+              <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+              <div class="custom-input" data-on-input-validate data-validate-type="text" data-limitation="name"
                 data-message-base="Поле обязательно к заполнению" data-required>
                 <input type="text" placeholder="Имя" name="name" aria-label="Имя">
               </div>
-              <div data-on-input-validate data-validate-type="phone" data-message-base="Поле обязательно к заполнению"
-                data-required>
+              <div class="custom-input" data-on-input-validate data-validate-type="phone"
+                data-message-base="Поле обязательно к заполнению" data-required>
                 <input type="tel" placeholder="Телефон" name="phone" aria-label="Телефон">
               </div>
-              <div data-on-input-validate data-validate-type="email" data-message-base="Поле обязательно к заполнению"
-                data-required>
+              <div class="custom-input" data-on-input-validate data-validate-type="email"
+                data-message-base="Поле обязательно к заполнению" data-required>
                 <input type="email" placeholder="Email" name="email" aria-label="Email">
               </div>
               <div class="reservation-form__wrapper">
-                <div data-on-input-validate data-validate-type="checkbox"
+                <div class="custom-input" data-on-input-validate data-validate-type="checkbox"
                   data-message-base="Поле обязательно к заполнению" data-required>
-                  <input type="checkbox" id="agreement" name="agreement" checked required>
                   <label for="agreement">
-                    <p>Я согласен на обработку моих&nbsp;персональных данных</p>
+                    <input class="visually-hidden" type="checkbox" id="agreement" name="agreement" checked required>
+                    <p>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</p>
                   </label>
                 </div>
               </div>
@@ -265,13 +276,13 @@
         </div>
       </section>
 
-      <section class="main__contacts contacts">
+      <section class="main__contacts contacts" id="contacts">
         <div class="contacts__container container">
           <h2 class="visually-hidden">Контакты</h2>
           <div class="contacts__map" id="map"></div>
           <div class="contacts__wrapper">
-            <p class="contacts__description">У вас ещё остались вопросы или сомнения?
-              Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
+            <p class="contacts__description">У&nbsp;вас ещё остались вопросы или сомнения?
+              Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
             <address class="contacts__address">г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</address>
             <address class="contacts__phone">
               <a class="contacts__phone-link" href="tel:88002000000">
@@ -285,22 +296,28 @@
 
     <footer class="main-footer">
       <div class="main-footer__container container">
-        <svg class="main-footer__logo" width="70" height="38" viewBox="0 0 70 38" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/sprite.svg#logo"></use>
-        </svg>
+        <div class="main-footer__logo logo">
+          <a class="logo__link" href="index.html">
+            <span class="visually-hidden">Логотип сайта.</span>
+            <svg class="logo__svg" class="main-header__logo" width="70" height="38" viewBox="0 0 70 38"
+              xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
         <nav class="main-footer__nav footer-nav">
           <ul class="footer-nav__list">
             <li class="footer-nav__item">
-              <a class="footer-nav__link">Преимущества</a>
+              <a class="footer-nav__link" href="#advantages">Преимущества</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link">Направления</a>
+              <a class="footer-nav__link" href="#">Направления</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link">Ближайшие круизы</a>
+              <a class="footer-nav__link" href="#cruises">Ближайшие круизы</a>
             </li>
             <li class="footer-nav__item">
-              <a class="footer-nav__link">Контакты</a>
+              <a class="footer-nav__link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -308,7 +325,7 @@
         <section class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link">
+              <a class="social__link" href="#">
                 <span class="visually-hidden">Одноклассники.</span>
                 <svg class="social__svg" width="12" height="20" viewBox="0 0 12 20" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -318,7 +335,7 @@
             </li>
 
             <li class="social__item">
-              <a class="social__link">
+              <a class="social__link" href="#">
                 <span class="visually-hidden">Социальная сеть</span>
                 <svg class="social__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -328,7 +345,7 @@
             </li>
 
             <li class="social__item">
-              <a class="social__link">
+              <a class="social__link" href="#">
                 <span class="visually-hidden">Социальная сеть</span>
                 <svg class="social__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -341,35 +358,6 @@
       </div>
     </footer>
   </div>
-
-  <!-- Модалки
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div> -->
   <script src="https://api-maps.yandex.ru/2.1/?apikey=84004cfc-697e-4afc-a4e8-91d961e95ef9&lang=ru_RU"></script>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
