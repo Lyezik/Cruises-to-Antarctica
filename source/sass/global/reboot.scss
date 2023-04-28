@@ -135,4 +135,5 @@ button,
 [type="submit"] {
   appearance: none;
   cursor: pointer;
+  user-select: none;
 }

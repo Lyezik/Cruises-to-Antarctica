@@ -92,10 +92,13 @@
 }
 
 .is-open .main-header__container {
+  position: absolute;
   flex-direction: column;
   background: #f9fbfd;
   height: 100vh;
   justify-content: flex-start;
+  width: 89%;
+  right: 0;
 }
 
 .is-open .main-header__logo {
@@ -106,6 +109,6 @@
   fill: #011c40;
 }
 
-.is-open {
-  padding-left: 36px;
-}
+// .is-open {
+//   padding-left: 36px;
+// }

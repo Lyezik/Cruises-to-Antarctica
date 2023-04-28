@@ -95,15 +95,19 @@
   margin: 0 0 8px;
 }
 
-.cruises__item button {
+.cruises__item a {
+  display: flex;
   margin-top: auto;
   min-height: 40px;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
   align-items: center;
+  justify-content: center;
   color: #011C40;
   border: none;
+  background: #F9FBFD;
+  user-select: none;
 }
 
 .cruises__item--astoria {

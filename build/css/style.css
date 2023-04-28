@@ -565,6 +565,10 @@ button,
   -moz-appearance: none;
   appearance: none;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .wrapper {
@@ -974,6 +978,7 @@ button,
 }
 
 .is-open .main-header__container {
+  position: absolute;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -983,6 +988,8 @@ button,
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  width: 89%;
+  right: 0;
 }
 
 .is-open .main-header__logo {
@@ -991,10 +998,6 @@ button,
 
 .is-open .logo__link {
   fill: #011c40;
-}
-
-.is-open {
-  padding-left: 36px;
 }
 
 .logo {
@@ -1388,7 +1391,10 @@ button,
   margin: 0 0 8px;
 }
 
-.cruises__item button {
+.cruises__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: auto;
   min-height: 40px;
   font-weight: 600;
@@ -1397,8 +1403,16 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: #011C40;
   border: none;
+  background: #F9FBFD;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .cruises__item--astoria {
@@ -1583,7 +1597,7 @@ button,
   position: relative;
 }
 
-.reservation-form__wrapper [type=checkbox]:focus ~ p {
+.reservation-form__wrapper [type=checkbox]:focus ~ span {
   opacity: 0.5;
 }
 
@@ -1597,7 +1611,7 @@ button,
   background: #f9fbfd;
 }
 
-.reservation-form__wrapper input:checked ~ p::after {
+.reservation-form__wrapper input:checked ~ span::after {
   content: "";
   position: absolute;
   top: 5px;
@@ -1607,7 +1621,7 @@ button,
   background: url("../img/sprite/check-mark.svg") no-repeat;
 }
 
-.reservation-form__wrapper p {
+.reservation-form__wrapper span {
   font-size: 10px;
   line-height: 13px;
   -webkit-box-align: center;
@@ -1620,7 +1634,7 @@ button,
   margin-bottom: 12px;
 }
 
-.reservation-form__wrapper p:hover {
+.reservation-form__wrapper span:hover {
   opacity: 0.5;
 }
 
@@ -2065,7 +2079,7 @@ button,
     -ms-flex-align: center;
     align-items: center;
     gap: 45px;
-    margin-bottom: 100px;
+    margin-bottom: 102px;
   }
 
   .reservation__wrapper {
@@ -2101,8 +2115,10 @@ button,
     margin-bottom: 5px;
   }
 
-  .reservation-form__wrapper p {
+  .reservation-form__wrapper span {
     padding-top: 4px;
+    margin-bottom: 5px;
+    letter-spacing: 0;
   }
 
   .contacts__container {
@@ -2493,11 +2509,12 @@ button,
     top: 0px;
   }
 
-  .reservation-form__wrapper p {
+  .reservation-form__wrapper span {
     line-height: 12px;
     text-align: start;
     padding-top: 0;
     padding-left: 28px;
+    margin-bottom: 7px;
   }
 
   .contacts__container {
