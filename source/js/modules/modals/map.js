@@ -8,7 +8,7 @@ function init() {
 
   let placemark = new ymaps.Placemark(cent, {}, {
     iconLayout: 'default#image',
-    iconImageHref: '../img/sprite/mark-icon.svg',
+    iconImageHref: './img/sprite/mark-icon.svg',
     iconImageSize: [18, 22],
     iconImageOffset: [-5, -20],
   });
