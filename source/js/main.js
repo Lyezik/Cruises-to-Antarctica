@@ -8,6 +8,10 @@ import {StickyHeader} from './modules/header/sticky-header';
 import {initLocomotiveScroll} from './modules/header/init-locomotive-scroll';
 import {init} from './modules/modals/map';
 
+let navMenu = document.querySelector('.main-header');
+
+navMenu.classList.remove('main-header--no-js');
+
 window.addEventListener('DOMContentLoaded', () => {
   initLocomotiveScroll();
 
