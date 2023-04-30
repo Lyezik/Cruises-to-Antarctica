@@ -1,5 +1,4 @@
 let cent = [59.93749, 30.32245];
-let ymaps;
 
 function init() {
   let map = new ymaps.Map('map', {
@@ -23,4 +22,4 @@ function init() {
   map.geoObjects.add(placemark);
 }
 
-export {init, ymaps};
+export {init};

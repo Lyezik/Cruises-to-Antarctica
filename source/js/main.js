@@ -6,7 +6,7 @@ import './modules/header/locomotive-scroll';
 import {Burger} from './modules/header/burger';
 import {StickyHeader} from './modules/header/sticky-header';
 import {initLocomotiveScroll} from './modules/header/init-locomotive-scroll';
-import {init, ymaps} from './modules/modals/map';
+import {init} from './modules/modals/map';
 
 let navMenu = document.querySelector('.main-header');
 
