@@ -1446,7 +1446,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: auto;
+  margin-top: 15px;
   min-height: 40px;
   font-weight: 600;
   font-size: 14px;
@@ -1520,8 +1520,8 @@ button,
 }
 
 .cruises li:hover,
-.cruises li:focus {
-  padding: 28px 25px 35px;
+.cruises li:focus-within {
+  padding: 28px 25px 10px;
   background: #011c40;
   -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
@@ -1531,13 +1531,13 @@ button,
 }
 
 .cruises li:hover h3,
-.cruises li:focus h3 {
+.cruises li:focus-within h3 {
   padding: 0;
   margin-bottom: 13px;
 }
 
 .cruises li:hover div,
-.cruises li:focus div {
+.cruises li:focus-within div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1546,9 +1546,6 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 2px;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
 }
 
 .reservation {
@@ -2096,6 +2093,10 @@ button,
     padding-bottom: 27px;
   }
 
+  .cruises__item a {
+    margin-top: 13px;
+  }
+
   .cruises__item--astoria {
     background: url("../img/cruise-astoria-tablet.jpg");
     background-size: cover;
@@ -2137,8 +2138,8 @@ button,
   }
 
   .cruises li:hover,
-  .cruises li:focus {
-    padding: 29px 35px 35px;
+  .cruises li:focus-within {
+    padding: 29px 35px 10px;
   }
 
   .reservation {
@@ -2525,6 +2526,10 @@ button,
     padding-bottom: 15px;
   }
 
+  .cruises__item a {
+    margin-top: 14px;
+  }
+
   .cruises__item--astoria {
     background: url("../img/cruise-astoria-mobile.jpg");
     background-size: cover;
@@ -2566,8 +2571,8 @@ button,
   }
 
   .cruises li:hover,
-  .cruises li:focus {
-    padding: 30px 25px 35px;
+  .cruises li:focus-within {
+    padding: 30px 25px 10px;
   }
 
   .reservation {
