@@ -12,6 +12,10 @@ import {init} from './modules/modals/map';
 window.addEventListener('DOMContentLoaded', () => {
   initLocomotiveScroll();
 
+  if (document.getElementsByClassName('main-header--no-js').length !== 0) {
+    let navMenu = document.querySelector('.main-header');
+    navMenu.classList.remove('main-header--no-js');
+  }
   // ---------------------------------
   // Utils
   // ---------------------------------
@@ -32,11 +36,6 @@ window.addEventListener('DOMContentLoaded', () => {
     burger.init();
     const stickyHeader = new StickyHeader();
     stickyHeader.init();
-
-    if (document.getElementsByClassName('main-header--no-js')) {
-      let navMenu = document.querySelector('.main-header');
-      navMenu.classList.remove('main-header--no-js');
-    }
 
     if (document.getElementById('map')) {
       ymaps.ready(init);
