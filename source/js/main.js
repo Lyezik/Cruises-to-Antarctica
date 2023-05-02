@@ -9,11 +9,6 @@ import {StickyHeader} from './modules/header/sticky-header';
 import {initLocomotiveScroll} from './modules/header/init-locomotive-scroll';
 import {init} from './modules/modals/map';
 
-if (document.querySelector('main-header--no-js')) {
-  let navMenu = document.querySelector('.main-header');
-  navMenu.classList.remove('main-header--no-js');
-}
-
 window.addEventListener('DOMContentLoaded', () => {
   initLocomotiveScroll();
 
@@ -37,6 +32,11 @@ window.addEventListener('DOMContentLoaded', () => {
     burger.init();
     const stickyHeader = new StickyHeader();
     stickyHeader.init();
+
+    if (document.getElementsByClassName('main-header--no-js')) {
+      let navMenu = document.querySelector('.main-header');
+      navMenu.classList.remove('main-header--no-js');
+    }
 
     if (document.getElementById('map')) {
       ymaps.ready(init);
