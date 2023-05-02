@@ -1,3 +1,5 @@
+/* global ymaps*/
+
 let cent = [59.93749, 30.32245];
 
 function init() {
