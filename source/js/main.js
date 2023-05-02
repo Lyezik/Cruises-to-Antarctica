@@ -1,3 +1,4 @@
+/* global ymaps*/
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
@@ -8,9 +9,10 @@ import {StickyHeader} from './modules/header/sticky-header';
 import {initLocomotiveScroll} from './modules/header/init-locomotive-scroll';
 import {init} from './modules/modals/map';
 
-let navMenu = document.querySelector('.main-header');
-
-navMenu.classList.remove('main-header--no-js');
+if (document.querySelector('main-header--no-js')) {
+  let navMenu = document.querySelector('.main-header');
+  navMenu.classList.remove('main-header--no-js');
+}
 
 window.addEventListener('DOMContentLoaded', () => {
   initLocomotiveScroll();
@@ -35,7 +37,10 @@ window.addEventListener('DOMContentLoaded', () => {
     burger.init();
     const stickyHeader = new StickyHeader();
     stickyHeader.init();
-    ymaps.ready(init);
+
+    if (document.getElementById('map')) {
+      ymaps.ready(init);
+    }
   });
 });
 
