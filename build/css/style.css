@@ -1403,6 +1403,7 @@ button,
 
 .cruises h3 {
   padding-left: 30px;
+  padding-right: 20px;
   padding-bottom: 23px;
   margin: 0;
   font-weight: 500;
@@ -1547,7 +1548,6 @@ button,
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  max-height: 386px;
   overflow-y: scroll;
 }
 
