@@ -42,6 +42,10 @@
   height: 43px;
   border: 0;
   background: #f9fbfd;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .reservation-form__wrapper {
@@ -98,6 +102,7 @@
   padding-left: 23px;
   letter-spacing: -0.1px;
   margin-bottom: 12px;
+  cursor: pointer;
 
   @include vp-1023 {
     padding-top: 4px;
@@ -128,7 +133,7 @@
   justify-content: center;
   color: #011c40;
   border: 0;
-  height: 43px;
+  min-height: 43px;
 
   &:hover {
     opacity: 0.7;

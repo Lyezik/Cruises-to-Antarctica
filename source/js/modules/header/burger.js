@@ -25,7 +25,7 @@ export class Burger {
   _openMenu() {
     this._isMenuOpen = true;
     this._header.classList.add('is-open');
-    this._scrollLock.disableScrolling();
+    this._scrollLock.enableScrolling();
     document.addEventListener('keydown', this._onDocumentKeydown);
     document.addEventListener('click', this._onDocumentClick);
     this._focusLock.lock('[data-header]');
@@ -37,13 +37,8 @@ export class Burger {
   _closeMenu() {
     this._isMenuOpen = false;
     this._header.classList.remove('is-open');
-    this._scrollLock.enableScrolling();
-    this._focusLock.unlock('[data-header]');
     document.removeEventListener('keydown', this._onDocumentKeydown);
     document.removeEventListener('click', this._onDocumentClick);
-    if (window.ls) {
-      window.ls.start();
-    }
   }
 
   _onBurgerClick() {

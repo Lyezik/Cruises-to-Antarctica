@@ -32,7 +32,7 @@
 .reservation__container {
   display: flex;
   gap: 15px;
-  padding: 50px 163px 51px;
+  padding: 50px 11.93% 51px;
   margin-bottom: 120px;
   justify-content: space-between;
 
@@ -118,6 +118,7 @@
 }
 
 .reservation__form-wrapper {
+  flex-shrink: 0;
   @include vp-1023 {
     padding: 0 19px;
   }
