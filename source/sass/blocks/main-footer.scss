@@ -10,10 +10,12 @@
   @include vp-1023 {
     padding-top: 47px;
     padding-right: 42px;
+    padding-bottom: 38px;
   }
 
   @include vp-767 {
     padding-top: 40px;
+    padding-bottom: 27px;
     flex-direction: column;
   }
 }
