@@ -25,7 +25,7 @@ export class Burger {
   _openMenu() {
     this._isMenuOpen = true;
     this._header.classList.add('is-open');
-    this._scrollLock.enableScrolling();
+    this._scrollLock.disableScrolling();
     document.addEventListener('keydown', this._onDocumentKeydown);
     document.addEventListener('click', this._onDocumentClick);
     this._focusLock.lock('[data-header]');
